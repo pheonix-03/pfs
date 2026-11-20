@@ -1,0 +1,6 @@
+# Netlify Redirects — clean URLs
+/about          /about.html     200
+/services       /services.html  200
+/contact        /contact.html   200
+/digital        /digital.html   200
+/index          /index.html     200

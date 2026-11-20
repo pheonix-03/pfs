@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /pfsadmin/
+Disallow: /data/
+Disallow: /includes/
+Disallow: /tests/
+
+Sitemap: https://primefleetservices.co.in/sitemap.xml

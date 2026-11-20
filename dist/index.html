@@ -1,0 +1,1608 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="color-scheme" content="dark light">
+    <script>
+        (function() {
+            try {
+                var urlParams = new URLSearchParams(window.location.search);
+                var forcedTheme = urlParams.get('theme');
+                var s = forcedTheme || localStorage.getItem('pfs-theme') || localStorage.getItem('pfs_theme');
+                var t = (s === 'light') ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', t);
+                if (t === 'light') {
+                    document.documentElement.classList.add('theme-style--light');
+                } else {
+                    document.documentElement.classList.remove('theme-style--light');
+                }
+                var meta = document.querySelector('meta[name="color-scheme"]');
+                if (meta) meta.content = t;
+            } catch(e) {}
+        })();
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://primefleetservices.co.in/">
+    
+    <!-- Meta Descriptions & Author -->
+    <meta name="description" content="Leading 24/7 limousine dispatch, reservation management, and BPO operations engineered for luxury transportation and enterprise fleets worldwide.">
+    <meta name="author" content="Prime Fleet Services">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://primefleetservices.co.in/">
+    <meta property="og:title" content="Prime Fleet Services | 24/7 Limousine Dispatch &amp; BPO Solutions">
+    <meta property="og:description" content="Leading 24/7 limousine dispatch, reservation management, and BPO operations engineered for luxury transportation and enterprise fleets worldwide.">
+    <meta property="og:image" content="https://primefleetservices.co.in/assets/img/slider/slide-1.jpg">
+    <meta property="og:site_name" content="Prime Fleet Services">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://primefleetservices.co.in/">
+    <meta name="twitter:title" content="Prime Fleet Services | 24/7 Limousine Dispatch &amp; BPO Solutions">
+    <meta name="twitter:description" content="Leading 24/7 limousine dispatch, reservation management, and BPO operations engineered for luxury transportation and enterprise fleets worldwide.">
+    <meta name="twitter:image" content="https://primefleetservices.co.in/assets/img/slider/slide-1.jpg">
+
+    <!-- Favicon -->
+    <link href="assets/img/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="assets/img/favicon.png" rel="apple-touch-icon">
+
+    <!-- Page Title -->
+    <title>Prime Fleet Services | 24/7 Limousine Dispatch &amp; BPO Solutions</title>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://primefleetservices.co.in/#organization",
+          "name": "Prime Fleet Services",
+          "url": "https://primefleetservices.co.in/",
+          "logo": "https://primefleetservices.co.in/assets/img/logo.png",
+          "description": "24/7 Limousine Dispatch, Fleet Management, and Omnichannel BPO Services.",
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+91-9679897979",
+              "contactType": "customer service",
+              "areaServed": ["IN", "US", "CA", "GB"],
+              "availableLanguage": ["English", "Hindi"]
+            },
+            {
+              "@type": "ContactPoint",
+              "telephone": "+1-747-236-2181",
+              "contactType": "sales",
+              "areaServed": "US",
+              "availableLanguage": "English"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/",
+            "https://www.linkedin.com/",
+            "https://www.instagram.com/"
+          ]
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://primefleetservices.co.in/#localbusiness",
+          "name": "Prime Fleet Services",
+          "image": "https://primefleetservices.co.in/assets/img/slider/slide-1.jpg",
+          "telephone": "+91-9679897979",
+          "email": "connect@primefleetservices.co.in",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "WEBEL IT PARK, Satellite Township, Kalyanpur",
+            "addressLocality": "Asansol",
+            "addressRegion": "West Bengal",
+            "postalCode": "713305",
+            "addressCountry": "IN"
+          },
+          "openingHours": "Mo-Su 00:00-24:00"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Core Web Vitals: Preconnect to Font CDNs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Styles Include -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/custom-ui.css?v=1789992887">
+    
+    <style>
+        /* Modern Enhancements & Clean Polish */
+        body { transition: opacity ease-in 0.2s; }
+        .wptb-cart-box { min-width: 260px; }
+        .wptb-item--holder h5 a { color: inherit; text-decoration: none; }
+        .form-message-alert { padding: 12px 18px; border-radius: 6px; margin-bottom: 20px; font-weight: 500; display: none; }
+        .form-message-alert.success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; display: block; }
+        .form-message-alert.error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; display: block; }
+
+        /* Accessibility Skip-to-content */
+        .skip-to-content {
+            position: absolute;
+            top: -999px;
+            left: 1rem;
+            background: #2563eb;
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            font-weight: 700;
+            border-radius: 8px;
+            z-index: 99999;
+            text-decoration: none;
+            transition: top 0.2s ease;
+        }
+        .skip-to-content:focus {
+            top: 1rem;
+        }
+        /* Top Scroll Progress Bar */
+        .pfs-scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            width: 0%;
+            background: linear-gradient(90deg, #2563eb, #38bdf8, #f59e0b);
+            z-index: 9999;
+            pointer-events: none;
+            transition: width 0.1s linear;
+        }
+    </style>
+
+    <!-- Anti-flicker Theme Initializer -->
+    <script>
+        (function() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var forcedTheme = urlParams.get('theme');
+            var theme = forcedTheme || localStorage.getItem('pfs-theme') || localStorage.getItem('pfs_theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+            if (theme === 'light') {
+                document.documentElement.classList.add('theme-style--light');
+            } else {
+                document.documentElement.classList.remove('theme-style--light');
+            }
+        })();
+    </script>
+</head>
+<body>
+    <script>
+        if (document.documentElement.getAttribute('data-theme') === 'light') {
+            document.body.classList.add('theme-style--light');
+        }
+    </script>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+    <!-- Top Scroll Progress Bar -->
+    <div id="scroll-progress-bar" class="pfs-scroll-progress"></div>
+
+    <!-- Preloader -->
+<div id="preloader">
+    <div class="preloader-inner">
+        <div class="spinner">
+            <img src="assets/img/preloader-logo.png" alt="Logo">
+            <img style="margin-top: 15px;" src="assets/img/preloader-wheel.svg" alt="Loading..." class="wheel">
+        </div>
+        <div class="loading-text">
+            <img src="assets/img/preloader-logo-text.png" alt="Prime Fleet Services">
+        </div>
+    </div>
+</div>
+<script>
+    setTimeout(function() {
+        var p = document.getElementById('preloader');
+        if (p && !p.classList.contains('hide')) {
+            p.classList.add('hide');
+        }
+    }, 1000);
+</script>
+
+    <!-- Main Header -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="header-top">
+            <div class="container-fluid pe-4">
+                <div class="header-top--inner d-none d-xl-flex justify-content-between align-items-center flex-wrap">
+                    <!-- Left Box -->
+                    <div class="left-box d-flex align-items-center">
+                        <ul class="info-list">
+                            <li><a href="mailto:connect@primefleetservices.co.in"><span class="icon bi bi-envelope-fill"></span>connect@primefleetservices.co.in</a></li>
+                            <li><a href="#"><span class="icon bi bi-clock"></span>24 X 7 Live</a></li>
+                            <li><a href="#"><span class="icon bi bi-geo-alt-fill"></span>WEBEL IT PARK, Satellite Township, Kalyanpur, Asansol, West Bengal 713305</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Right Box -->
+                    <div class="right-box d-flex align-items-center">
+                        <div class="social-box">
+                            <ul>
+                                                                    <li><a href="https://www.facebook.com/profile.php?id=61590988964177" class="bi bi-facebook" target="_blank" rel="noopener"></a></li>
+                                                                                                    <li><a href="https://www.instagram.com/primefleet.services/" class="bi bi-instagram" target="_blank" rel="noopener"></a></li>
+                                                                                                    <li><a href="https://x.com/primefleetsrv" class="bi bi-twitter-x" target="_blank" rel="noopener"></a></li>
+                                                                                                    <li><a href="https://www.youtube.com/@PrimeFleetServices" class="bi bi-youtube" target="_blank" rel="noopener"></a></li>
+                                                                                                    <li><a href="https://www.reddit.com/user/PrimeFleetServices/" class="bi bi-reddit" target="_blank" rel="noopener"></a></li>
+                                                                                                    <li><a href="https://linkedin.com/" class="bi bi-linkedin" target="_blank" rel="noopener"></a></li>
+                                                            </ul>
+                        </div>
+
+                        <!-- Integrated Executive Theme Pill Switch -->
+                        <div class="theme-top-switch ms-3">
+                            <button type="button" class="pfs-theme-pill-toggle" id="theme-toggle" aria-label="Toggle Color Theme" title="Toggle Light/Dark Mode">
+                                <i class="bi bi-sun-fill theme-icon-sun"></i>
+                                <i class="bi bi-moon-stars-fill theme-icon-moon"></i>
+                                <span class="theme-label-text ms-1">Mode</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lower Bar -->
+        <div class="header-inner">
+            <div class="container-fluid pe-0">
+                <div class="d-flex align-items-center justify-content-between">
+                    <!-- Left Part (Logo) -->
+                    <div class="header_left_part d-flex align-items-center">
+                        <div class="logo">
+                            <a href="index.html" class="light_logo"><img src="assets/img/logo.png" alt="PFS - Prime Fleet Services"></a>
+                        </div>
+                    </div>
+
+                    <!-- Right Part -->
+                    <div class="header_right_part d-flex align-items-center">
+                        <div class="mainnav d-none d-xl-block">
+                            <ul class="main-menu">
+                                <li class="menu-item active"><a href="index.html">Home</a></li>
+                                <li class="menu-item "><a href="about.html">About Us</a></li>
+                                <li class="menu-item "><a href="services.html">Services</a></li>
+                                <li class="menu-item "><a href="digital.html">Digital Marketing</a></li>
+                                <li class="menu-item "><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="wptb-header--cart">
+                            <a href="contact.html" class="wptb-cart-icon" title="Quick Consultation"><i class="bi bi-arrow-up-right"></i></a>
+                            <div class="wptb-cart-box">
+                                <div class="wptb-grand-total">
+                                    <ul>
+                                        <li><a href="services.html">Enhanced Satisfaction</a></li>
+                                        <li><a href="services.html">Reduced Cost</a></li>
+                                        <li><a href="services.html">Scalable Solutions</a></li>
+                                        <li><a href="services.html">Professional Expertise</a></li>
+                                    </ul>
+                                    <div class="wptb-item--button">
+                                        <a href="contact.html" class="btn-two w-100 justify-content-center" style="padding: 12px 24px; font-size: 0.88rem;">
+                                            <span>Get Consultation</span>
+                                            <i class="bi bi-arrow-up-right ms-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wptb-icon-box1 live-chat d-none d-md-block">
+                            <div class="wptb-item--inner flex-start">
+                                <div class="wptb-item--icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.9268 20.5991C22.0141 19.6831 20.5336 19.6823 19.6201 20.5991L19.6172 20.602C19.143 21.0779 18.3743 21.0784 17.9003 20.6027C17.0858 19.7854 16.0287 18.7244 15.2142 17.907C14.7402 17.4313 14.7407 16.6599 15.215 16.1839L15.2179 16.181C16.1313 15.2643 16.1306 13.7785 15.2179 12.8625C14.8047 12.4478 14.34 11.9815 13.9055 11.5454C13.379 11.0159 12.6635 10.719 11.9183 10.7189C11.1726 10.7193 10.4578 11.0162 9.93062 11.5452L9.0091 12.4701C7.85245 13.6309 7.53171 15.3883 8.20291 16.8846L8.20482 16.8899C10.2592 21.2294 14.4347 25.4234 18.9171 27.5713L18.9197 27.5729C20.4104 28.2635 22.167 27.9506 23.3269 26.7907C23.6323 26.5134 23.9421 26.2035 24.2394 25.9053C24.7665 25.3762 25.0623 24.6589 25.0628 23.9105C25.0626 23.1626 24.7668 22.4445 24.2392 21.9161C23.8047 21.4801 23.34 21.0137 22.9268 20.5991ZM22.1323 21.3964L23.4447 22.7135C23.7612 23.0311 23.9383 23.4616 23.9382 23.9103C23.9386 24.3596 23.7603 24.7899 23.4441 25.1072C23.1573 25.3951 22.8583 25.6962 22.558 25.9683L22.5374 25.988C21.7113 26.817 20.4586 27.0414 19.3974 26.551C15.1422 24.511 11.1759 20.5317 9.22594 16.417C8.74891 15.3487 8.97887 14.0955 9.80433 13.2682L10.7259 12.3433C11.042 12.026 11.4708 11.8471 11.9185 11.8475C12.3656 11.8474 12.7945 12.0251 13.111 12.3428L14.4234 13.6599C14.8974 14.1356 14.8969 14.907 14.4226 15.383L14.4197 15.3858C13.5063 16.3026 13.5065 17.789 14.4197 18.7044L17.1058 21.4001C18.0179 22.3166 19.499 22.3168 20.4125 21.4001L20.4154 21.3972C20.8896 20.9212 21.6577 20.9213 22.1323 21.3964Z" fill="white"></path>
+                                    </svg>
+                                </div>
+                                <div class="wptb-item--holder">
+                                    <p class="wptb-item--description">Need Help</p>
+                                    <h5 class="wptb-item--title"><a href="tel:+919679897979">+91-9679897979</a></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="aside_open d-none d-xl-block">
+                            <div class="aside-open--inner">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="mr_menu_toggle d-xl-none">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Responsive Menu -->
+    <div class="mr_menu">
+        <button type="button" class="mr_menu_close"><i class="bi bi-x-lg"></i></button>
+        <div class="logo">
+            <a href="index.html" class="light_logo"><img src="assets/img/logo.png" alt="PFS - Prime Fleet Services"></a>
+        </div>
+        <div class="mr_navmenu">
+            <ul class="main-menu">
+                <li class="menu-item active"><a href="index.html">Home</a></li>
+                <li class="menu-item "><a href="about.html">About Us</a></li>
+                <li class="menu-item "><a href="services.html">Services</a></li>
+                <li class="menu-item "><a href="digital.html">Digital Marketing</a></li>
+                <li class="menu-item "><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="mt-4 pt-3 border-top border-secondary border-opacity-25 text-center">
+                <button type="button" class="pfs-theme-toggle mobile-toggle" aria-label="Toggle Light/Dark Theme">
+                    <i class="bi bi-sun-fill icon-sun"></i>
+                    <i class="bi bi-moon-stars-fill icon-moon"></i>
+                    <span>Switch Theme</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aside Drawer Information -->
+    <div class="aside_info_wrapper">
+        <button class="aside_close"><i class="bi bi-x-lg"></i></button>
+        <div class="aside_logo">
+            <a href="index.html"><img src="assets/img/logo.png" alt="PFS - Prime Fleet Services"></a>
+        </div>
+        <div class="aside_info_inner">
+            <!-- Appearance / Theme Selector inside Drawer -->
+            <div class="mb-4 d-flex align-items-center justify-content-between p-3 rounded-3" style="background: var(--pfs-glass-bg); border: 1px solid var(--pfs-glass-border);">
+                <div>
+                    <strong class="d-block" style="color: var(--pfs-heading-color); font-size: 0.92rem;">Theme Mode</strong>
+                    <small style="color: var(--pfs-muted-color); font-size: 0.78rem;">Toggle Light / Dark interface</small>
+                </div>
+                <button type="button" class="pfs-theme-toggle m-0" aria-label="Toggle Light/Dark Theme">
+                    <i class="bi bi-sun-fill icon-sun"></i>
+                    <i class="bi bi-moon-stars-fill icon-moon"></i>
+                </button>
+            </div>
+
+            <p style="text-align: justify;">We offer scalable and professional customer support that enhances satisfaction while reducing costs. We also ensure that your business delivers exceptional experiences and achieves lasting success.</p>
+
+            <div class="aside_info_inner_box">
+                <div class="wptb-office">
+                    <div class="wptb-item--inner">
+                        <div class="wptb-item--subtitle">Call Us Anytime</div>
+                        <h5 class="wptb-item--title"><a href="tel:+919679897979">+91-9679897979</a></h5>
+                        <h5 class="wptb-item--title"><a href="tel:7472362181">(747) 236-2181</a></h5>
+                    </div>
+                </div>
+
+                <div class="wptb-office">
+                    <div class="wptb-item--inner">
+                        <div class="wptb-item--subtitle">SEND US MAIL</div>
+                        <h5 class="wptb-item--title"><a href="mailto:info@primefleetservices.co.in">info@primefleetservices.co.in</a></h5>
+                    </div>
+                </div>
+
+                <div class="wptb-office">
+                    <div class="wptb-item--inner">
+                        <div class="wptb-item--subtitle">VISIT OUR WORKSHOP</div>
+                        <h5 class="wptb-item--title">WEBEL IT PARK, Satellite Township, Kalyanpur, Asansol, West Bengal 713305</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social_sites">
+                <ul class="d-flex align-items-center">
+                                            <li><a href="https://www.facebook.com/profile.php?id=61590988964177" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a></li>
+                                                                <li><a href="https://x.com/primefleetsrv" target="_blank" rel="noopener"><i class="bi bi-twitter-x"></i></a></li>
+                                                                <li><a href="https://www.instagram.com/primefleet.services/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a></li>
+                                                                <li><a href="https://linkedin.com/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a></li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+
+<main class="wrapper" id="main-content">
+
+    <!-- 1. MODERN SPLIT HTML HERO SECTION (PFS ORIGINAL CONTENT) -->
+        <section class="section-hero">
+        <div class="container">
+            <div class="responsive-grid-hero">
+                <div>
+                    <div class="section-badge">
+                        <i class="bi bi-stars"></i>
+                        <span>24/7 GLOBAL FLEET DISPATCH &amp; BPO SOLUTIONS</span>
+                    </div>
+                    <h1 class="hero-main-title">
+                        Elite Limousine <span class="text-gold">Dispatch</span> &amp; Fleet Operations.<br><span class="text-gradient">Engineered for Precision.</span>                    </h1>
+                    <p class="hero-lead-text">
+                        Scalable 24/7 reservation management, real-time chauffeur coordination, and omnichannel guest care tailored for luxury transportation providers worldwide.                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-cta-group">
+                                                <a href="services.html" class="btn-two">
+                            <span>Our Services</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                                                                        <a href="contact.html" class="btn-three">
+                            <span>Contact Us</span>
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                                            </div>
+
+                    <!-- 4 Reference Pillars (Fast, Real-Time, Reliable, 24/7 Support) -->
+                    <div class="hero-reference-pillars mt-4 pt-2 d-flex flex-wrap align-items-center gap-3">
+                        <div class="pfs-pillar-item d-flex align-items-center gap-2">
+                            <i class="bi bi-truck text-gold fs-5"></i>
+                            <span class="pillar-label text-white fw-bold" style="font-size: 0.82rem; letter-spacing: 0.02em;">Fast &amp; On-Time Dispatch</span>
+                        </div>
+                        <div class="pfs-pillar-item d-flex align-items-center gap-2">
+                            <i class="bi bi-geo-alt-fill text-gold fs-5"></i>
+                            <span class="pillar-label text-white fw-bold" style="font-size: 0.82rem; letter-spacing: 0.02em;">Real-Time Tracking</span>
+                        </div>
+                        <div class="pfs-pillar-item d-flex align-items-center gap-2">
+                            <i class="bi bi-shield-check text-gold fs-5"></i>
+                            <span class="pillar-label text-white fw-bold" style="font-size: 0.82rem; letter-spacing: 0.02em;">Reliable &amp; Secure</span>
+                        </div>
+                        <div class="pfs-pillar-item d-flex align-items-center gap-2">
+                            <i class="bi bi-headset text-gold fs-5"></i>
+                            <span class="pillar-label text-white fw-bold" style="font-size: 0.82rem; letter-spacing: 0.02em;">24/7 Dedicated Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Photo Showcase -->
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-frame">
+                        <img src="assets/img/slider/slide-1.jpg" alt="Prime Fleet Services" class="img-fluid">
+                    </div>
+                    
+                    <!-- Floating Stat Pill using PFS's genuine 24/7 Live Support -->
+                    <div class="hero-floating-pill">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="hero-floating-stat">24/7</div>
+                            <div class="hero-floating-label">Live Operational Support Worldwide</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 2. BPO SERVICES GRID SECTION -->
+        <section class="wptb-service-one pt-4 pb-5 position-relative">
+        <div class="container pt-3 pb-4 pfs-services-container">
+            <div class="wptb-heading text-center mb-5">
+                <div class="wptb-item--inner">
+                    <div class="section-badge mb-3">
+                        <i class="bi bi-lightning-charge-fill"></i>
+                        <span>How We Help Your Business</span>
+                    </div>
+                    <h2 class="wptb-item--title" style="font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 800;">
+                        Your Journey. <span class="text-gradient">Our Commitment.</span>
+                    </h2>
+                    <p class="text-muted mx-auto mt-2" style="max-width: 720px; font-size: 1.02rem; line-height: 1.7;">
+                        Scalable 24/7 limousine dispatch, reservation management, chauffeur coordination, and omnichannel customer support engineered for premium transportation brands.                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="wptb-item--inner p-3 p-md-4 h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="pfs-service-card-thumb mb-3 overflow-hidden rounded-3 position-relative">
+                                    <a href="services.html" class="d-block overflow-hidden">
+                                        <img src="assets/img/services/srv_voice_support.jpg" alt="Voice Support" class="w-100 h-100" loading="lazy">
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3 gap-2">
+                                    <span class="pfs-service-badge" title="24/7 Inbound &amp; Outbound">
+                                        <i class="bi bi-headset me-1"></i>
+                                        24/7 Inbound &amp; Outbound                                    </span>
+                                    <span class="pfs-service-order">#01</span>
+                                </div>
+                                <h4 class="wptb-item--title mb-2">
+                                    <a href="services.html">Voice Support</a>
+                                </h4>
+                                <p class="wptb-item--description" style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6;">
+                                    Clear, professional, and empathetic telephonic support tailored for global enterprises.                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 pfs-service-explore-wrap">
+                                <a href="services.html" class="pfs-service-explore-link">
+                                    <span>Explore Service</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="wptb-item--inner p-3 p-md-4 h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="pfs-service-card-thumb mb-3 overflow-hidden rounded-3 position-relative">
+                                    <a href="services.html" class="d-block overflow-hidden">
+                                        <img src="assets/img/services/srv_non_voice.jpg" alt="Non-Voice Support" class="w-100 h-100" loading="lazy">
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3 gap-2">
+                                    <span class="pfs-service-badge" title="Omnichannel Chat &amp; Email">
+                                        <i class="bi bi-chat-dots me-1"></i>
+                                        Omnichannel Chat &amp; Email                                    </span>
+                                    <span class="pfs-service-order">#02</span>
+                                </div>
+                                <h4 class="wptb-item--title mb-2">
+                                    <a href="services.html">Non-Voice Support</a>
+                                </h4>
+                                <p class="wptb-item--description" style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6;">
+                                    Lightning-fast live chat, email ticketing, and back-office documentation management.                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 pfs-service-explore-wrap">
+                                <a href="services.html" class="pfs-service-explore-link">
+                                    <span>Explore Service</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="wptb-item--inner p-3 p-md-4 h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="pfs-service-card-thumb mb-3 overflow-hidden rounded-3 position-relative">
+                                    <a href="services.html" class="d-block overflow-hidden">
+                                        <img src="assets/img/services/srv_professional_team.jpg" alt="Professional Team" class="w-100 h-100" loading="lazy">
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3 gap-2">
+                                    <span class="pfs-service-badge" title="Dedicated Domain Specialists">
+                                        <i class="bi bi-people me-1"></i>
+                                        Dedicated Domain Specialists                                    </span>
+                                    <span class="pfs-service-order">#03</span>
+                                </div>
+                                <h4 class="wptb-item--title mb-2">
+                                    <a href="services.html">Professional Team</a>
+                                </h4>
+                                <p class="wptb-item--description" style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6;">
+                                    Highly vetted, rigorously trained domain specialists dedicated to your brand.                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 pfs-service-explore-wrap">
+                                <a href="services.html" class="pfs-service-explore-link">
+                                    <span>Explore Service</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="wptb-item--inner p-3 p-md-4 h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="pfs-service-card-thumb mb-3 overflow-hidden rounded-3 position-relative">
+                                    <a href="services.html" class="d-block overflow-hidden">
+                                        <img src="assets/img/services/srv_quality_monitoring.jpg" alt="Quality &amp; Monitoring" class="w-100 h-100" loading="lazy">
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3 gap-2">
+                                    <span class="pfs-service-badge" title="Six Sigma QA &amp; Calibration">
+                                        <i class="bi bi-shield-check me-1"></i>
+                                        Six Sigma QA &amp; Calibration                                    </span>
+                                    <span class="pfs-service-order">#04</span>
+                                </div>
+                                <h4 class="wptb-item--title mb-2">
+                                    <a href="services.html">Quality &amp; Monitoring</a>
+                                </h4>
+                                <p class="wptb-item--description" style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6;">
+                                    Continuous QA evaluations, call calibrations, and performance scorecards.                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 pfs-service-explore-wrap">
+                                <a href="services.html" class="pfs-service-explore-link">
+                                    <span>Explore Service</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="wptb-item--inner p-3 p-md-4 h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="pfs-service-card-thumb mb-3 overflow-hidden rounded-3 position-relative">
+                                    <a href="services.html" class="d-block overflow-hidden">
+                                        <img src="assets/img/services/srv_scalable_solutions.jpg" alt="Scalable Solutions" class="w-100 h-100" loading="lazy">
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3 gap-2">
+                                    <span class="pfs-service-badge" title="Flexible Enterprise Staffing">
+                                        <i class="bi bi-graph-up-arrow me-1"></i>
+                                        Flexible Enterprise Staffing                                    </span>
+                                    <span class="pfs-service-order">#05</span>
+                                </div>
+                                <h4 class="wptb-item--title mb-2">
+                                    <a href="services.html">Scalable Solutions</a>
+                                </h4>
+                                <p class="wptb-item--description" style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6;">
+                                    Flexible staffing models that grow effortlessly with your business peaks and seasons.                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 pfs-service-explore-wrap">
+                                <a href="services.html" class="pfs-service-explore-link">
+                                    <span>Explore Service</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="wptb-item--inner p-3 p-md-4 h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="pfs-service-card-thumb mb-3 overflow-hidden rounded-3 position-relative">
+                                    <a href="services.html" class="d-block overflow-hidden">
+                                        <img src="assets/img/services/srv_measurable_results.jpg" alt="Measurable Results" class="w-100 h-100" loading="lazy">
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3 gap-2">
+                                    <span class="pfs-service-badge" title="Data-Driven KPIs &amp; Analytics">
+                                        <i class="bi bi-pie-chart me-1"></i>
+                                        Data-Driven KPIs &amp; Analytics                                    </span>
+                                    <span class="pfs-service-order">#06</span>
+                                </div>
+                                <h4 class="wptb-item--title mb-2">
+                                    <a href="services.html">Measurable Results</a>
+                                </h4>
+                                <p class="wptb-item--description" style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6;">
+                                    Data-driven insights, transparent KPIs, and constant operational optimization.                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 pfs-service-explore-wrap">
+                                <a href="services.html" class="pfs-service-explore-link">
+                                    <span>Explore Service</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </section>
+    
+    <!-- 3. SLA PERFORMANCE & KEY METRICS COUNTER -->
+        <section class="wptb-funfacts-one py-5 position-relative">
+        <div class="container py-2">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="wptb-counter1 style1">
+                        <div class="wptb-item--inner">
+                            <div class="wptb-item--holder">
+                                <div class="wptb-item--value">0<span class="suffix">%</span></div>
+                                <div class="wptb-item--text">Downtime Commitment</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="wptb-counter1 style1">
+                        <div class="wptb-item--inner">
+                            <div class="wptb-item--holder">
+                                <div class="wptb-item--value">99.9<span class="suffix">%</span></div>
+                                <div class="wptb-item--text">High SLA Availability</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="wptb-counter1 style1">
+                        <div class="wptb-item--inner">
+                            <div class="wptb-item--holder">
+                                <div class="wptb-item--value">24<span class="suffix">/7</span></div>
+                                <div class="wptb-item--text">Live Chauffeur Dispatch</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="wptb-counter1 style1">
+                        <div class="wptb-item--inner">
+                            <div class="wptb-item--holder">
+                                <div class="wptb-item--value">100<span class="suffix">%</span></div>
+                                <div class="wptb-item--text">Dedicated Quality Control</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 4. ABOUT PRIME FLEET & CEO MESSAGE -->
+    <section class="wptb-about-company-one py-5 position-relative">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="wptb-heading">
+                        <div class="wptb-item--inner">
+                            <h6 class="wptb-item--subtitle">
+                                <i class="bi bi-shield-check me-1"></i>
+                                About Prime Fleet Services
+                            </h6>
+                            <h2 class="wptb-item--title">Leading Global BPO for Limousine & Transportation Networks</h2>
+                            <p class="wptb-item--description mt-3">
+                                At Prime Fleet Services, we believe that world-class customer experience is the cornerstone of sustainable business growth. We do not just act as an outsourced vendor; we embed ourselves as dedicated brand ambassadors for each of our global partners.<br />
+<br />
+Our advanced IT Park setup, rigorous training methodologies, and transparent SLA tracking ensure your customers receive empathetic, lightning-fast, and precise solutions 24 hours a day, 365 days a year.                            </p>
+                            <div class="mt-4 pt-2 d-flex flex-wrap gap-3">
+                                <a href="about.html" class="btn-two">
+                                    <span>Company Profile</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                                <a href="contact.html" class="btn-three">
+                                    <span>Schedule a Call</span>
+                                    <i class="bi bi-telephone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-4 p-md-5 rounded-4 pfs-commitment-card">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="pfs-commitment-icon">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <div>
+                                <h5 class="pfs-commitment-title">Executive Commitment</h5>
+                                <span class="pfs-commitment-subtitle">Zero Compromise on Quality & Speed</span>
+                            </div>
+                        </div>
+                        <p class="pfs-commitment-quote">
+                            "Our mission is simple: to make fleet operators in the United States and globally completely confident that every call, every reservation, and every dispatch requirement is handled flawlessly 24 hours a day, 365 days a year."
+                        </p>
+                        <div class="mt-4 pt-3 d-flex align-items-center justify-content-between pfs-commitment-divider">
+                            <div>
+                                <strong class="pfs-commitment-leader">Prime Fleet Services Leadership</strong>
+                                <small style="color: var(--pfs-yellow-primary); font-weight: 600;">Asansol | Kolkata | USA Operations</small>
+                            </div>
+                            <span class="badge pfs-iso-badge">ISO 9001:2015</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. WHY CHOOSE US -->
+        <section class="wptb-why-choose-one py-5 position-relative">
+        <div class="container py-4">
+            <div class="wptb-heading text-center mb-5">
+                <div class="wptb-item--inner">
+                    <div class="section-badge mb-3">
+                        <i class="bi bi-award-fill"></i>
+                        <span>Why Global Fleets Trust Us</span>
+                    </div>
+                    <h2 class="wptb-item--title" style="font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 800;">
+                        Built for <span class="text-gradient">Reliability, Scale & Precision</span>
+                    </h2>
+                    <p class="pfs-section-subtitle mt-2 mx-auto" style="max-width: 680px; font-size: 0.98rem; line-height: 1.6;">
+                        High-availability operations backed by enterprise infrastructure, rigorous training, and strict SOP compliance.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="pfs-feature-card h-100 p-4 rounded-4 position-relative overflow-hidden text-center">
+                            <div class="wptb-item--icon mx-auto mb-3">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <h4 class="wptb-item--title mb-2" style="font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em;">
+                                PROFESSIONAL WORKSPACE                            </h4>
+                            <p class="wptb-item--description m-0" style="font-size: 0.92rem; line-height: 1.65;">
+                                Equipped with enterprise-grade infrastructure, ergonomic seating, dual-monitor workstations, and noise-isolated calling floors.                            </p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="pfs-feature-card h-100 p-4 rounded-4 position-relative overflow-hidden text-center">
+                            <div class="wptb-item--icon mx-auto mb-3">
+                                <i class="bi bi-award"></i>
+                            </div>
+                            <h4 class="wptb-item--title mb-2" style="font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em;">
+                                TRAINED PROFESSIONALS                            </h4>
+                            <p class="wptb-item--description m-0" style="font-size: 0.92rem; line-height: 1.65;">
+                                Every team member is trained in active listening, conflict resolution, technical empathy, and CRM mastery.                            </p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="pfs-feature-card h-100 p-4 rounded-4 position-relative overflow-hidden text-center">
+                            <div class="wptb-item--icon mx-auto mb-3">
+                                <i class="bi bi-diagram-3"></i>
+                            </div>
+                            <h4 class="wptb-item--title mb-2" style="font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em;">
+                                STANDARDIZED PROCESSES                            </h4>
+                            <p class="wptb-item--description m-0" style="font-size: 0.92rem; line-height: 1.65;">
+                                Strict SOPs and call flows designed in collaboration with client leadership for uniform customer experience.                            </p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="pfs-feature-card h-100 p-4 rounded-4 position-relative overflow-hidden text-center">
+                            <div class="wptb-item--icon mx-auto mb-3">
+                                <i class="bi bi-check2-circle"></i>
+                            </div>
+                            <h4 class="wptb-item--title mb-2" style="font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em;">
+                                QUALITY ASSURANCE                            </h4>
+                            <p class="wptb-item--description m-0" style="font-size: 0.92rem; line-height: 1.65;">
+                                Multi-tier QA monitoring and weekly coaching sessions to maintain industry-leading service levels.                            </p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="pfs-feature-card h-100 p-4 rounded-4 position-relative overflow-hidden text-center">
+                            <div class="wptb-item--icon mx-auto mb-3">
+                                <i class="bi bi-gear-wide-connected"></i>
+                            </div>
+                            <h4 class="wptb-item--title mb-2" style="font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em;">
+                                SMOOTH OPERATIONS                            </h4>
+                            <p class="wptb-item--description m-0" style="font-size: 0.92rem; line-height: 1.65;">
+                                Redundant power backups, high-speed leased-line fiber internet, and seamless failover systems.                            </p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="pfs-feature-card h-100 p-4 rounded-4 position-relative overflow-hidden text-center">
+                            <div class="wptb-item--icon mx-auto mb-3">
+                                <i class="bi bi-shield-lock"></i>
+                            </div>
+                            <h4 class="wptb-item--title mb-2" style="font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em;">
+                                DATA PRIVACY &amp; SECURITY                            </h4>
+                            <p class="wptb-item--description m-0" style="font-size: 0.92rem; line-height: 1.65;">
+                                Compliant with modern data security protocols, secure VPNs, NDA enforcement, and clean desk policies.                            </p>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </section>
+    
+    <!-- 6. CHALLENGES VS SOLUTIONS SPLIT CARDS -->
+    <section class="wptb-service-two py-5 position-relative">
+        <div class="container py-4">
+            <div class="wptb-heading text-center mb-5">
+                <div class="wptb-item--inner">
+                    <h6 class="wptb-item--subtitle">
+                        <i class="bi bi-sliders me-1"></i>
+                        Operational Contrast
+                    </h6>
+                    <h2 class="wptb-item--title">Traditional Roadblocks vs. The PFS Advantage</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Left: Challenges -->
+                <div class="col-lg-6">
+                    <div class="challenge-card-dark h-100">
+                        <div class="d-flex align-items-center gap-3 mb-4 pb-3" style="border-bottom: 1px solid rgba(239, 68, 68, 0.2);">
+                            <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(239, 68, 68, 0.15); display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-exclamation-octagon-fill" style="font-size: 1.3rem; color: #f87171;"></i>
+                            </div>
+                            <div>
+                                <h3 class="m-0" style="font-size: 1.3rem;">Common Fleet Challenges</h3>
+                                <small style="color: #94a3b8;">Bottlenecks facing growing transportation operators</small>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                                                                                                <li class="d-flex align-items-start gap-3">
+                                        <i class="bi bi-x-circle-fill text-danger mt-1"></i>
+                                        <div>
+                                            <strong class="text-white d-block">SLOW RESPONSE TIMES</strong>
+                                            <span style="color: #94a3b8; font-size: 0.9rem;">Overwhelmed in-house staff leads to frustrated customers and long waiting queues.</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="bi bi-x-circle-fill text-danger mt-1"></i>
+                                        <div>
+                                            <strong class="text-white d-block">RISING COSTS</strong>
+                                            <span style="color: #94a3b8; font-size: 0.9rem;">High recruitment, onboarding, overhead, and retention costs for domestic support teams.</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="bi bi-x-circle-fill text-danger mt-1"></i>
+                                        <div>
+                                            <strong class="text-white d-block">CUSTOMER REVIEW</strong>
+                                            <span style="color: #94a3b8; font-size: 0.9rem;">Negative online reviews and declining customer loyalty due to inconsistent support.</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="bi bi-x-circle-fill text-danger mt-1"></i>
+                                        <div>
+                                            <strong class="text-white d-block">POOR CUSTOMER SATISFACTION</strong>
+                                            <span style="color: #94a3b8; font-size: 0.9rem;">Inflexible support hours and lack of dedicated specialized talent.</span>
+                                        </div>
+                                    </li>
+                                                                                    </ul>
+                    </div>
+                </div>
+
+                <!-- Right: PFS Solutions -->
+                <div class="col-lg-6">
+                    <div class="solution-card-dark h-100">
+                        <div class="d-flex align-items-center gap-3 mb-4 pb-3" style="border-bottom: 1px solid rgba(59, 130, 246, 0.3);">
+                            <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(37, 99, 235, 0.25); display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-check2-circle" style="font-size: 1.4rem; color: var(--pfs-yellow-primary);"></i>
+                            </div>
+                            <div>
+                                <h3 class="m-0" style="font-size: 1.3rem;">The Prime Fleet Solution</h3>
+                                <small style="color: var(--pfs-blue-cyan);">Dedicated 24/7 limousine dispatch coordination</small>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                                                                                                <li class="d-flex align-items-start gap-3">
+                                        <i class="bi bi-check-circle-fill mt-1" style="color: var(--pfs-yellow-primary);"></i>
+                                        <div>
+                                            <strong class="text-white d-block">PROFESSIONAL EXPERTISE</strong>
+                                            <span style="color: #cbd5e1; font-size: 0.9rem;">Rigorous onboarding and continuous QA to handle calls, emails, and live chats proficiently.</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="bi bi-check-circle-fill mt-1" style="color: var(--pfs-yellow-primary);"></i>
+                                        <div>
+                                            <strong class="text-white d-block">REDUCED COSTS</strong>
+                                            <span style="color: #cbd5e1; font-size: 0.9rem;">Save up to 60% in overheads while dramatically increasing customer satisfaction and loyalty.</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="bi bi-check-circle-fill mt-1" style="color: var(--pfs-yellow-primary);"></i>
+                                        <div>
+                                            <strong class="text-white d-block">SCALABLE SOLUTIONS</strong>
+                                            <span style="color: #cbd5e1; font-size: 0.9rem;">Ramp agent seats up or down seamlessly based on demand spikes and seasonal volume.</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="d-flex align-items-start gap-3">
+                                        <i class="bi bi-check-circle-fill mt-1" style="color: var(--pfs-yellow-primary);"></i>
+                                        <div>
+                                            <strong class="text-white d-block">ENHANCED SATISFACTION</strong>
+                                            <span style="color: #cbd5e1; font-size: 0.9rem;">Instant response times, 24/7 coverage, and delightful customer service interactions.</span>
+                                        </div>
+                                    </li>
+                                                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. OFFICIAL ACCREDITATIONS & CERTIFICATES -->
+    <!-- 7. OFFICIAL ACCREDITATIONS & CERTIFICATES -->
+        <section class="wptb-product-categories-one py-5 position-relative">
+        <div class="container py-4">
+            <div class="wptb-heading text-center mb-5">
+                <div class="wptb-item--inner">
+                    <div class="section-badge mb-3">
+                        <i class="bi bi-patch-check-fill"></i>
+                        <span>Certified Excellence</span>
+                    </div>
+                    <h2 class="wptb-item--title" style="font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 800;">
+                        Accreditations &amp; Compliance Credentials                    </h2>
+                                            <p class="text-white-50 mt-2 mx-auto" style="max-width: 680px; font-size: 0.98rem; line-height: 1.6;">
+                            Audited and certified by leading quality assurance bodies ensuring strict SLA compliance.                        </p>
+                                    </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <div class="pfs-certificate-card" onclick="openCertLightbox({&quot;id&quot;:1,&quot;title&quot;:&quot;National Limousine Association (NLA) Certificate of Membership 2027&quot;,&quot;image_url&quot;:&quot;pfsadmin\/upload\/nla-certificate 01).jpeg&quot;,&quot;certificate_no&quot;:&quot;NLA-76293977&quot;,&quot;sort_order&quot;:1,&quot;status&quot;:1,&quot;issuing_authority&quot;:&quot;National Limousine Association (NLA)&quot;,&quot;issue_date&quot;:&quot;&quot;,&quot;expiry_date&quot;:&quot;2027&quot;,&quot;description&quot;:&quot;Official NLA Membership accreditation validating Prime Fleet Services as a recognized 24\/7 global dispatch and reservation partner in the chauffeured transportation industry.&quot;,&quot;verification_url&quot;:&quot;&quot;,&quot;is_featured&quot;:1});" role="button" tabindex="0">
+                            <div>
+                                <div class="pfs-cert-thumb-box">
+                                                                            <img src="pfsadmin/upload/nla-certificate 01).jpeg" alt="National Limousine Association (NLA) Certificate of Membership 2027" class="pfs-cert-thumb-img" loading="lazy">
+                                                                        <div class="pfs-cert-hover-overlay">
+                                        <i class="bi bi-zoom-in"></i>
+                                        <span>Click to Inspect Document</span>
+                                    </div>
+                                </div>
+
+                                <span class="pfs-cert-badge-authority">
+                                    <i class="bi bi-patch-check-fill me-1"></i>
+                                    National Limousine Association (NLA)                                </span>
+
+                                <h4 class="pfs-cert-card-title">National Limousine Association (NLA) Certificate of Membership 2027</h4>
+
+                                                                    <p class="pfs-cert-card-desc">Official NLA Membership accreditation validating Prime Fleet Services as a recognized 24/7 global dispatch and reservation partner in the chauffeured transportation industry.</p>
+                                                            </div>
+
+                            <div class="pfs-cert-card-footer">
+                                                                    <span class="pfs-cert-card-code">Code: NLA-76293977</span>
+                                                                <span class="pfs-cert-inspect-link">
+                                    View Proof <i class="bi bi-arrow-right"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Inspection Lightbox Modal -->
+    <div id="pfsCertModal" class="pfs-lightbox-modal" onclick="if(event.target===this) closeCertLightbox();" role="dialog" aria-modal="true" aria-labelledby="modalCertTitle">
+        <div class="pfs-lightbox-dialog">
+            <div class="p-3 p-md-4 d-flex align-items-center justify-content-between border-bottom" style="border-color: var(--pfs-glass-border) !important;">
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-patch-check-fill" style="color: var(--pfs-yellow-primary); font-size: 1.3rem;"></i>
+                    <h5 id="modalCertTitle" class="m-0 font-weight-bold" style="color: var(--pfs-heading-color); font-size: 1.2rem;"></h5>
+                </div>
+                <button type="button" class="btn-close" onclick="closeCertLightbox();" aria-label="Close" style="filter: var(--pfs-close-filter, invert(1)); opacity: 0.8;"></button>
+            </div>
+            
+            <div class="p-3 p-md-4">
+                <div class="text-center p-2 mb-4 rounded-3" style="background: #000; border: 1px solid rgba(59, 130, 246, 0.25); min-height: 280px; max-height: 520px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <img id="modalCertImage" src="" alt="Certificate Proof" style="max-height: 480px; max-width: 100%; object-fit: contain; border-radius: 6px;">
+                    <div id="modalCertPdf" style="display: none; padding: 40px; text-align: center;">
+                        <i class="bi bi-file-earmark-pdf-fill" style="font-size: 4.5rem; color: #ef4444;"></i>
+                        <h4 class="text-white mt-3">PDF Accreditation Document</h4>
+                        <p style="color: #94a3b8;">This official certificate document is stored in PDF format.</p>
+                    </div>
+                </div>
+
+                <div class="p-3 rounded-3 mb-3" style="background: var(--pfs-glass-bg); border: 1px solid var(--pfs-glass-border);">
+                    <div class="row g-3">
+                        <div class="col-sm-4">
+                            <small class="d-block" style="color: var(--pfs-muted-color); font-size: 0.78rem;">Issuing Body</small>
+                            <strong id="modalCertAuthority" style="color: var(--pfs-blue-cyan); font-size: 0.95rem;"></strong>
+                        </div>
+                        <div class="col-sm-4">
+                            <small class="d-block" style="color: var(--pfs-muted-color); font-size: 0.78rem;">Accreditation Code</small>
+                            <code id="modalCertCode" style="color: var(--pfs-yellow-primary); font-size: 0.92rem; font-weight: 700;"></code>
+                        </div>
+                        <div class="col-sm-4">
+                            <small class="d-block" style="color: var(--pfs-muted-color); font-size: 0.78rem;">Validity Status</small>
+                            <span id="modalCertValidity" style="color: var(--pfs-heading-color); font-weight: 600; font-size: 0.9rem;"></span>
+                        </div>
+                    </div>
+                    <div id="modalCertDescBox" class="mt-3 pt-3 border-top" style="border-color: var(--pfs-glass-border) !important;">
+                        <small class="d-block mb-1" style="color: var(--pfs-muted-color); font-size: 0.78rem;">Accreditation Scope</small>
+                        <p id="modalCertDesc" class="m-0" style="color: var(--pfs-body-color); font-size: 0.9rem; line-height: 1.6;"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-3 p-md-4 border-top d-flex align-items-center justify-content-between flex-wrap gap-2" style="border-color: var(--pfs-glass-border) !important;">
+                <div class="d-flex gap-2">
+                    <a id="modalCertOpenBtn" href="#" target="_blank" class="btn-two btn-sm" style="padding: 8px 18px; font-size: 0.85rem;">
+                        <span>Open Full Size</span>
+                        <i class="bi bi-box-arrow-up-right ms-1"></i>
+                    </a>
+                    <a id="modalCertVerifyBtn" href="#" target="_blank" class="btn-three btn-sm" style="padding: 8px 18px; font-size: 0.85rem; display: none;">
+                        <span>External Verification</span>
+                        <i class="bi bi-shield-check ms-1"></i>
+                    </a>
+                </div>
+                <button type="button" class="btn-three btn-sm" onclick="closeCertLightbox();" style="padding: 8px 18px; font-size: 0.85rem;">
+                    <span>Close</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function openCertLightbox(cert) {
+        document.getElementById('modalCertTitle').textContent = cert.title || 'Official Certificate';
+        document.getElementById('modalCertAuthority').textContent = cert.issuing_authority || 'National Limousine Association (NLA)';
+        document.getElementById('modalCertCode').textContent = cert.certificate_no || 'VERIFIED';
+        
+        var valText = 'Lifetime Active';
+        if (cert.expiry_date) {
+            valText = (cert.issue_date ? cert.issue_date + ' to ' : 'Valid until ') + cert.expiry_date;
+        } else if (cert.issue_date) {
+            valText = 'Issued: ' + cert.issue_date;
+        }
+        document.getElementById('modalCertValidity').textContent = valText;
+
+        var descEl = document.getElementById('modalCertDesc');
+        var descBox = document.getElementById('modalCertDescBox');
+        if (cert.description) {
+            descEl.textContent = cert.description;
+            descBox.style.display = 'block';
+        } else {
+            descBox.style.display = 'none';
+        }
+
+        var isPdf = (cert.image_url || '').toLowerCase().endsWith('.pdf');
+        var imgEl = document.getElementById('modalCertImage');
+        var pdfEl = document.getElementById('modalCertPdf');
+        if (isPdf) {
+            imgEl.style.display = 'none';
+            pdfEl.style.display = 'block';
+        } else {
+            imgEl.src = cert.image_url;
+            imgEl.style.display = 'block';
+            pdfEl.style.display = 'none';
+        }
+
+        document.getElementById('modalCertOpenBtn').href = cert.image_url;
+
+        var vBtn = document.getElementById('modalCertVerifyBtn');
+        if (cert.verification_url) {
+            vBtn.href = cert.verification_url;
+            vBtn.style.display = 'inline-flex';
+        } else {
+            vBtn.style.display = 'none';
+        }
+
+        var modal = document.getElementById('pfsCertModal');
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeCertLightbox() {
+        var modal = document.getElementById('pfsCertModal');
+        if (modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    }
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeCertLightbox();
+        }
+    });
+    </script>
+    
+    <!-- 8. CLIENT TESTIMONIALS CAROUSEL -->
+        <section class="wptb-testimonials-one py-5 position-relative">
+        <div class="container py-4">
+            <div class="wptb-heading text-center mb-5">
+                <div class="wptb-item--inner">
+                    <h6 class="wptb-item--subtitle">
+                        <i class="bi bi-chat-quote-fill me-1"></i>
+                        Partner Endorsements
+                    </h6>
+                    <h2 class="wptb-item--title">What Luxury Fleet Operators Say</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="wptb-testimonial-card">
+                            <div class="wptb-testimonial-rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                            </div>
+                            <p class="wptb-testimonial-quote">
+                                "Prime Fleet Services completely revolutionized our support desk. Response times dropped by 75% within the first 30 days, and our customer satisfaction scores jumped to 98%. Their agents feel like an authentic in-house team!"
+                            </p>
+                            <div class="wptb-testimonial-author">
+                                <img src="assets/img/services/s1.png" alt="Michael Vance" class="wptb-testimonial-avatar">
+                                <div class="wptb-testimonial-meta">
+                                    <h5>Michael Vance</h5>
+                                    <span>VP of Operations &bull; Nexus Logix Inc.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="wptb-testimonial-card">
+                            <div class="wptb-testimonial-rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                            </div>
+                            <p class="wptb-testimonial-quote">
+                                "The transition to Prime Fleet Services was seamless. Their team handles all our peak holiday volume without a single backlog. Professional, reliable, and exceptionally cost-effective."
+                            </p>
+                            <div class="wptb-testimonial-author">
+                                <img src="assets/img/services/s2.png" alt="Sarah Jenkins" class="wptb-testimonial-avatar">
+                                <div class="wptb-testimonial-meta">
+                                    <h5>Sarah Jenkins</h5>
+                                    <span>Head of Customer Experience &bull; Aura Retail Group</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="wptb-testimonial-card">
+                            <div class="wptb-testimonial-rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                            </div>
+                            <p class="wptb-testimonial-quote">
+                                "Their digital marketing and non-voice chat support teams are world-class. We scaled from 5 to 30 dedicated agents in just four months with zero downtime."
+                            </p>
+                            <div class="wptb-testimonial-author">
+                                <img src="assets/img/services/s3.png" alt="David Chen" class="wptb-testimonial-avatar">
+                                <div class="wptb-testimonial-meta">
+                                    <h5>David Chen</h5>
+                                    <span>Managing Director &bull; Apex Mobility Ltd.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </section>
+    
+    <!-- 9. QUICK CONTACT & LEAD CAPTURE FORM -->
+    <section class="wptb-contact-one py-5 position-relative">
+        <div class="container py-4">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <div class="wptb-heading">
+                        <div class="wptb-item--inner">
+                            <h6 class="wptb-item--subtitle">
+                                <i class="bi bi-headset me-1"></i>
+                                24/7 Operations Desk
+                            </h6>
+                            <h2 class="wptb-item--title">Let's Discuss Your Fleet Requirements</h2>
+                            <p class="wptb-item--description mt-3">
+                                Connect with our senior dispatch directors to formulate a bespoke limousine BPO, back-office, or digital marketing agreement tailored to your dispatch platform.
+                            </p>
+                            <div class="d-flex flex-column gap-3 mt-4">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="pfs-contact-round-icon">
+                                        <i class="bi bi-telephone-fill"></i>
+                                    </div>
+                                    <div>
+                                        <small class="pfs-contact-label">Direct Telephone Support</small>
+                                        <a href="tel:+919679897979" class="pfs-contact-detail-link">+91-9679897979 / (747) 236-2181</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="pfs-contact-round-icon">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </div>
+                                    <div>
+                                        <small class="pfs-contact-label">Email Inquiries</small>
+                                        <a href="mailto:connect@primefleetservices.co.in" class="pfs-contact-detail-link">connect@primefleetservices.co.in</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="p-4 p-md-5 rounded-4 pfs-contact-form-card">
+                        <h4 class="font-weight-bold mb-1">Request Operational Proposal</h4>
+                        <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 24px;">Complete the form below for a rapid response from our executive dispatch team.</p>
+
+                        <div id="formMessageAlert" class="form-message-alert"></div>
+
+                        <form id="contactForm" method="post" action="#" data-netlify="true" name="inquiry">
+                            <input type="hidden" name="csrf_token" value="465ffd96151d8daf470287b1e7c4c221d26a399ef2c313ae88c9a6f3f8b37a6f">                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label small">Your Full Name *</label>
+                                    <input type="text" name="name" class="form-control pfs-form-input" placeholder="e.g. Michael Vance" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small">Work Email *</label>
+                                    <input type="email" name="email" class="form-control pfs-form-input" placeholder="michael@fleetlimo.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small">Phone Number</label>
+                                    <input type="text" name="phone" class="form-control pfs-form-input" placeholder="+1 (555) 019-2834">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small">Subject / Fleet Software</label>
+                                    <input type="text" name="subject" class="form-control pfs-form-input" placeholder="e.g. 24/7 Limo Anywhere Dispatch">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small">Project / Requirement Details *</label>
+                                    <textarea name="message" rows="4" class="form-control pfs-form-input" placeholder="Describe your fleet size, operational shift hours, and dispatch requirements..." required></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn-two w-100 justify-content-center" style="padding: 16px;">
+                                        <span>Submit Operational Request</span>
+                                        <i class="bi bi-send-fill ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<script>
+// Contact Form AJAX Handler
+$(document).ready(function() {
+    $('#contactForm').on('submit', function(e) {
+        e.preventDefault();
+        var $form = $(this);
+        var $alert = $('#formMessageAlert');
+        var $btn = $form.find('button[type="submit"]');
+
+        $btn.prop('disabled', true);
+        $alert.removeClass('success error').hide();
+
+        $.ajax({
+            url: 'submit-inquiry.php',
+            type: 'POST',
+            data: $form.serialize(),
+            dataType: 'json',
+            success: function(resp) {
+                if (resp.success) {
+                    $alert.addClass('success').text(resp.message).fadeIn();
+                    $form[0].reset();
+                } else {
+                    $alert.addClass('error').text(resp.message).fadeIn();
+                }
+            },
+            error: function() {
+                $alert.addClass('error').text('An error occurred submitting your request. Please call our 24/7 desk directly.').fadeIn();
+            },
+            complete: function() {
+                $btn.prop('disabled', false);
+            }
+        });
+    });
+});
+</script>
+
+        <!-- Executive Site Footer -->
+        <footer class="footer position-relative overflow-hidden" style="background-color: var(--pfs-footer-bg); border-top: 1px solid var(--pfs-footer-border);">
+            <!-- Ambient Glow Overlay -->
+            <div style="position: absolute; top: 0; left: 15%; width: 450px; height: 450px; background: radial-gradient(circle, rgba(208, 159, 69, 0.08) 0%, transparent 70%); pointer-events: none;"></div>
+            <div style="position: absolute; bottom: 0; right: 10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(245, 158, 11, 0.06) 0%, transparent 70%); pointer-events: none;"></div>
+
+            <!-- Pre-Footer Assistance & CTA Strip -->
+            <div class="footer-pre-cta py-5 position-relative" style="border-bottom: 1px solid rgba(255, 255, 255, 0.07); background: var(--pfs-footer-pre-bg);">
+                <div class="container">
+                    <div class="row align-items-center g-4">
+                        <div class="col-lg-7">
+                            <div class="section-badge mb-2">
+                                <i class="bi bi-headset"></i>
+                                <span>24/7 Global Fleet Desk</span>
+                            </div>
+                            <h3 class="text-white mb-2" style="font-size: clamp(1.5rem, 2.5vw, 2.1rem); font-weight: 800; letter-spacing: -0.02em;">
+                                Ready to Scale Your Fleet Operations? <span class="text-gradient">Talk with our specialists.</span>
+                            </h3>
+                            <p class="text-white-50 m-0" style="font-size: 0.96rem; line-height: 1.6;">
+                                Instant pod onboarding, dedicated chauffeur dispatchers, and guaranteed 99.9% uptime SLA.
+                            </p>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="d-flex flex-wrap align-items-center justify-content-lg-end gap-3">
+                                <div class="p-3 px-4 rounded-4 d-flex align-items-center gap-3" style="background: var(--pfs-footer-card-bg); border: 1px solid rgba(208, 159, 69, 0.35); backdrop-filter: blur(10px);">
+                                    <div style="width: 42px; height: 42px; border-radius: 10px; background: linear-gradient(135deg, #FBE4A8 0%, #D09F45 100%); display: flex; align-items: center; justify-content: center; color: #030d1d;">
+                                        <i class="bi bi-telephone-fill"></i>
+                                    </div>
+                                    <div>
+                                        <small class="d-block text-uppercase fw-bold" style="color: var(--pfs-yellow-primary); font-size: 0.72rem; letter-spacing: 0.08em;">Direct USA Desk</small>
+                                        <a href="tel:7472362181" class="text-white fw-bold text-decoration-none" style="font-size: 1.05rem;">(747) 236-2181</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="btn-two">
+                                    <span>Get In Touch</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Footer 4-Column Grid -->
+            <div class="footer-main py-5 position-relative">
+                <div class="container py-3">
+                    <div class="row g-5">
+                        <!-- Column 1: Brand & Identity -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-widget pe-lg-4">
+                                <div class="footer-logo mb-4">
+                                    <a href="index.html"><img src="assets/img/logo.png" alt="PFS - Prime Fleet Services" style="max-height: 48px;"></a>
+                                </div>
+                                <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.7; margin-bottom: 1.5rem;">
+                                    Prime Fleet Services is a premier global Business Process Outsourcing company specializing in round-the-clock limousine dispatch, reservation management, flight tracking, and digital solutions for elite fleet operators worldwide.
+                                </p>
+
+                                <!-- Trust Accreditations -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="badge footer-trust-badge">
+                                        <i class="bi bi-patch-check-fill text-warning me-1"></i> ISO 9001:2015
+                                    </span>
+                                    <span class="badge footer-trust-badge">
+                                        <i class="bi bi-shield-lock-fill text-warning me-1"></i> ISO 27001
+                                    </span>
+                                    <span class="badge footer-trust-badge footer-trust-badge-muted">
+                                        MSME &amp; Startup India
+                                    </span>
+                                </div>
+
+                                <!-- Social Media Links -->
+                                <div class="footer-social d-flex gap-2">
+                                                                            <a href="https://www.facebook.com/profile.php?id=61590988964177" target="_blank" rel="noopener" class="footer-social-btn" title="Facebook"><i class="bi bi-facebook"></i></a>
+                                                                                                                <a href="https://www.instagram.com/primefleet.services/" target="_blank" rel="noopener" class="footer-social-btn" title="Instagram"><i class="bi bi-instagram"></i></a>
+                                                                                                                <a href="https://x.com/primefleetsrv" target="_blank" rel="noopener" class="footer-social-btn" title="X / Twitter"><i class="bi bi-twitter-x"></i></a>
+                                                                                                                <a href="https://www.youtube.com/@PrimeFleetServices" target="_blank" rel="noopener" class="footer-social-btn" title="YouTube"><i class="bi bi-youtube"></i></a>
+                                                                                                                <a href="https://www.reddit.com/user/PrimeFleetServices/" target="_blank" rel="noopener" class="footer-social-btn" title="Reddit"><i class="bi bi-reddit"></i></a>
+                                                                        <a href="https://wa.me/919679897979" target="_blank" rel="noopener" class="footer-social-btn whatsapp-hover" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Core Solutions -->
+                        <div class="col-lg-2 col-md-6 col-sm-6">
+                            <div class="footer-widget">
+                                <h5 class="widget-title">Core Solutions</h5>
+                                <ul class="footer-menu-links list-unstyled mb-0">
+                                    <li><a href="services.html"><i class="bi bi-chevron-right"></i> 24/7 Fleet Dispatch</a></li>
+                                    <li><a href="services.html"><i class="bi bi-chevron-right"></i> Reservation Control</a></li>
+                                    <li><a href="services.html"><i class="bi bi-chevron-right"></i> Chauffeur Support</a></li>
+                                    <li><a href="services.html"><i class="bi bi-chevron-right"></i> VIP Flight Tracking</a></li>
+                                    <li><a href="digital.html"><i class="bi bi-chevron-right"></i> Digital Marketing</a></li>
+                                    <li><a href="services.html"><i class="bi bi-chevron-right"></i> Inbound / Outbound BPO</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Column 3: Company Links -->
+                        <div class="col-lg-2 col-md-6 col-sm-6">
+                            <div class="footer-widget">
+                                <h5 class="widget-title">Navigation</h5>
+                                <ul class="footer-menu-links list-unstyled mb-0">
+                                    <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home Overview</a></li>
+                                    <li><a href="about.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                                    <li><a href="services.html"><i class="bi bi-chevron-right"></i> Enterprise Services</a></li>
+                                    <li><a href="digital.html"><i class="bi bi-chevron-right"></i> Digital Growth</a></li>
+                                    <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact &amp; Support</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Column 4: Global HQ & Newsletter -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-widget">
+                                <h5 class="widget-title">Global Headquarters</h5>
+                                <div class="footer-contact-details mb-4">
+                                    <div class="d-flex align-items-start gap-3 mb-3">
+                                        <div class="footer-contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                                        <div>
+                                            <small class="footer-contact-label d-block text-uppercase fw-bold">Operations Facility</small>
+                                            <span class="footer-contact-val">WEBEL IT PARK, Satellite Township, Kalyanpur, Asansol, West Bengal 713305</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 mb-3">
+                                        <div class="footer-contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                                        <div>
+                                            <small class="footer-contact-label d-block text-uppercase fw-bold">Email Inquiries</small>
+                                            <a href="mailto:connect@primefleetservices.co.in" class="footer-contact-val footer-contact-link">connect@primefleetservices.co.in</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="footer-contact-icon"><i class="bi bi-telephone-fill"></i></div>
+                                        <div>
+                                            <small class="footer-contact-label d-block text-uppercase fw-bold">India Line</small>
+                                            <a href="tel:+919679897979" class="footer-contact-val footer-contact-link">+91-9679897979</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Newsletter Form -->
+                                <h6 class="text-white fw-bold mb-2" style="font-size: 0.95rem;">Join Our Industry Newsletter</h6>
+                                <p style="color: #94a3b8; font-size: 0.82rem; margin-bottom: 12px;">Get monthly fleet optimization strategies and operational benchmarks.</p>
+                                <form class="newsletter-form" id="newsletterForm" method="post" action="#" data-netlify="true" name="subscribe">
+                                    <div id="newsletterAlert" class="form-message-alert mb-2"></div>
+                                    <div class="newsletter-input-wrap d-flex align-items-stretch">
+                                        <input type="email" name="email" class="newsletter-input" placeholder="Work email address..." required autocomplete="email">
+                                        <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe to newsletter">
+                                            <i class="bi bi-send-fill"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="footer-bottom py-4" style="border-top: 1px solid rgba(255, 255, 255, 0.07); background: #03050b;">
+                <div class="container">
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 text-center text-md-start">
+                        <div class="copyright" style="color: #94a3b8; font-size: 0.86rem;">
+                            Copyright &copy; 2026 Prime Fleet Services. All Rights Reserved. <span class="d-none d-lg-inline text-muted">| Last Updated: September 2026</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 text-white-50" style="font-size: 0.82rem;">
+                            <span><i class="bi bi-shield-check text-warning me-1"></i> Enterprise NDA Protection</span>
+                            <span>•</span>
+                            <span><i class="bi bi-clock-history text-primary me-1"></i> 24/7/365 Continuous Shifts</span>
+                            <span>•</span>
+                            <span><i class="bi bi-activity text-success me-1"></i> 99.9% Uptime SLA</span>
+                        </div>
+                        <div class="footer-nav-bottom">
+                            <ul class="list-unstyled d-flex align-items-center gap-3 m-0" style="font-size: 0.86rem;">
+                                <li><a href="about.html" style="color: #94a3b8; text-decoration: none;">Privacy Policy</a></li>
+                                <li><a href="about.html" style="color: #94a3b8; text-decoration: none;">Terms of Use</a></li>
+                                <li><a href="contact.html" style="color: #94a3b8; text-decoration: none;">Support SLA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top -->
+        <div class="totop">
+            <a href="#"><i class="bi bi-chevron-up"></i></a>
+        </div>
+
+        <!-- WhatsApp Floating Chat Button (ESLLP Luxury Style) -->
+        <div class="wabtn" id="wabutton">
+            <a class="wabtn-modern" target="_blank" rel="noopener" href="https://wa.me/919679897979?text=Hi%21+I%27m+interested+in+your+services+and+would+love+to+know+more.+Could+you+please+provide+additional+details%3F" aria-label="Chat on WhatsApp">
+                <span class="pulse-dot"></span>
+                <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.8759 4.06939C21.4959 1.68839 18.3316 0.253548 14.9723 0.0320463C11.613 -0.189455 8.28774 0.817483 5.61565 2.86535C2.94357 4.91323 1.10682 7.86244 0.447451 11.1638C-0.21192 14.4652 0.351026 17.8937 2.03146 20.8109L0.0625 28.0004L7.42006 26.0712C9.45505 27.1794 11.7353 27.7601 14.0524 27.7602H14.0583C16.8029 27.7599 19.4859 26.946 21.768 25.4212C24.0502 23.8965 25.829 21.7294 26.8798 19.1939C27.9305 16.6583 28.206 13.8682 27.6713 11.1761C27.1367 8.48406 25.8159 6.01095 23.8759 4.06939Z" fill="#22C55E"/>
+                    <path d="M10.6291 7.98363C10.3723 7.41271 10.1019 7.40123 9.85771 7.39143C9.65779 7.38275 9.42903 7.38331 9.20083 7.38331C9.0271 7.3879 8.8562 7.42837 8.69887 7.5022C8.54154 7.57602 8.40119 7.68159 8.28663 7.81227C7.899 8.17929 7.59209 8.62305 7.38547 9.11526C7.17884 9.60747 7.07704 10.1373 7.08655 10.6711C7.08655 12.3578 8.31519 13.9877 8.48655 14.2164C8.65791 14.4452 10.8581 18.0169 14.3425 19.3908C17.2382 20.5327 17.8276 20.3056 18.4562 20.2485C19.0848 20.1913 20.4843 19.4194 20.7701 18.6189C21.056 17.8183 21.0557 17.1323 20.9701 16.989C20.8844 16.8456 20.6559 16.7605 20.3129 16.5889C19.9699 16.4172 18.2849 15.5879 17.9704 15.4736C17.656 15.3594 17.4275 15.3023 17.199 15.6455C16.9705 15.9888 16.3139 16.7602 16.1137 16.9895C15.9135 17.2189 15.7136 17.2471 15.3709 17.0758C14.3603 16.6729 13.4275 16.0972 12.6143 15.3745C11.8648 14.6818 11.2221 13.8819 10.7072 13.0007C10.5073 12.6579 10.6857 12.472 10.8579 12.3007C11.0119 12.1472 11.2006 11.9005 11.3722 11.7003C11.5129 11.5271 11.6282 11.3346 11.7147 11.1289C11.7603 11.0343 11.7817 10.9299 11.7768 10.825C11.7719 10.7201 11.7409 10.6182 11.6867 10.5283C11.6001 10.3566 10.9337 8.66151 10.6291 7.98363Z" fill="white"/>
+                </svg>
+                <span>Chat with us</span>
+            </a>
+        </div>
+
+        <!-- Core JS Scripts -->
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="plugins/wow/wow.min.js"></script>
+        <script src="plugins/swiper/swiper-bundle.min.js"></script>
+        <script src="plugins/odometer/appear.js"></script>
+        <script src="plugins/odometer/odometer.js"></script>
+        <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+        <script src="plugins/flatpickr/flatpickr.min.js"></script>
+        <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+        <script src="assets/js/theme.js"></script>
+        <script src="assets/js/pricetable-toggler.js"></script>
+        <script src="assets/js/theme-toggle.js"></script>
+
+        <script>
+        // Dynamic Swiper Autoplay & Effect from Admin CMS
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function() {
+                var swiperElement = document.querySelector('.swiper-main-slider');
+                if (swiperElement && swiperElement.swiper) {
+                    var isAutoplay = swiperElement.getAttribute('data-autoplay') !== '0';
+                    var delay = parseInt(swiperElement.getAttribute('data-delay')) || 5000;
+                    var effect = swiperElement.getAttribute('data-effect') || 'slide';
+
+                    swiperElement.swiper.params.effect = effect;
+                    if (isAutoplay) {
+                        swiperElement.swiper.params.autoplay = {
+                            delay: delay, 
+                            disableOnInteraction: false
+                        };
+                        swiperElement.swiper.autoplay.start();
+                    } else {
+                        swiperElement.swiper.autoplay.stop();
+                    }
+                }
+            }, 800);
+        });
+
+        // Newsletter AJAX Form
+        $(document).ready(function() {
+            $('#newsletterForm').on('submit', function(e) {
+                e.preventDefault();
+                var $form = $(this);
+                var $alert = $('#newsletterAlert');
+                var $btn = $form.find('button[type="submit"]');
+
+                $btn.prop('disabled', true);
+                $alert.removeClass('success error').hide();
+
+                $.ajax({
+                    url: 'subscribe.php',
+                    type: 'POST',
+                    data: $form.serialize(),
+                    dataType: 'json',
+                    success: function(resp) {
+                        $alert.addClass(resp.success ? 'success' : 'error').text(resp.message).show();
+                        if (resp.success) {
+                            $form[0].reset();
+                        }
+                    },
+                    error: function() {
+                        $alert.addClass('error').text('An error occurred. Please try again later.').show();
+                    },
+                    complete: function() {
+                        $btn.prop('disabled', false);
+                    }
+                });
+            });
+        </script>
+        <!-- Theme Toggle Controller -->
+        <script src="assets/js/theme-toggle.js?v=1789981540"></script>
+    </body>
+</html>
+
+

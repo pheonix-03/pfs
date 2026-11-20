@@ -1,0 +1,24 @@
+# Portable PHP binary runtime
+.php/
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+
+# SQLite local databases
+data/*.db
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Editor / IDE settings
+.vscode/
+.idea/
+
+# Logs
+*.log
